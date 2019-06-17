@@ -2,7 +2,7 @@
 
 作为Linux下老牌编辑器vim发展至今已有30个年头了,期间各种编辑器兴衰更替,唯独vim做到了长盛不衰.在服务器上vim绝对是一个必备的技能.vim支持纯的键盘操作,能够极大地提高编辑的效率.但是vim对待新手并不友好,操作命令多,学习曲线陡,将很多非服务器端开发者拒之门外.
 
-![vimemacs](/home/chen/Downloads/vimemacs.png)
+![vimemacs](https://raw.githubusercontent.com/csbbo/vimrc/master/images/vimemacs.png)
 
 ### 模式
 - normal模式是vim强大的编辑能力来源,在上面可以通过hjkl进行光标移动,normal模式命令往往需要一个操作符结尾,例如"dd"删除当前行,第二个"d"也可以替换成移动命令j表示删除当前行和下一行.
@@ -119,5 +119,6 @@ vim映射就是吧一个操作映射到另一个操作
 
 [VimAwesome](https://vimawesome.com/)是源自GitHub，Vim.org和用户提交的Vim插件的目录。插件使用数据是从GitHub上的dotfiles repos中提取的。
 
-[我的vimrc]()
-![myvimrc]()
+###### [我的vimrc](https://github.com/csbbo/vimrc)
+
+![myvimrc](https://raw.githubusercontent.com/csbbo/vimrc/master/images/c1myvimrc.png)
