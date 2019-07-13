@@ -24,7 +24,7 @@ noremap <C-l> <C-w>l
 
 com! FormatJSON %!python3 -m json.tool
 
-
+"curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 "vim-plug
 call plug#begin('~/.vim/plugged')
 
