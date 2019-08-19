@@ -8,14 +8,13 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set cindent
+set mouse=a
 
 let mapleader=","
 syntax on
 set list lcs=tab:\|\ 
 
-inoremap jj <Esc>`^
-inoremap <leader>w <Esc>:w<cr>
-noremap <leader>w :w<cr>
+inoremap jj <Esc>:w<cr>
 
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
@@ -45,7 +44,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'brooth/far.vim'  "搜索替换Far foo bar **/*.py , Fardo
 
 "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }  "golang IDE
-Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }  "python IDE
+" Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }  "python IDE
 Plug 'lfv89/vim-interestingwords' "高亮<leader>k,<leader>K
 Plug 'tpope/vim-commentary'  "快速注释gcc,gcgc
 Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'} "自动补全
@@ -72,16 +71,16 @@ colorscheme hybrid"
 set updatetime=300
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 "python
-let g:pymode_python = 'python3'
-let g:pymode_trim_whitespaces = 1
-let g:pymode_doc = 1
-let g:pymode_doc_bind = 'K'
-let g:pymode_rope_goto_definition_bin = "<C-]>"
-let g:pymode_lint = 1
-let g:pymode_lint_checkers = ['pyflakes','pep8','pylint']
-set completeopt-=preview
-inoremap <f8> <Esc>:PymodeLintAuto<cr>
-noremap <f8> :PymodeLintAuto<cr>
+" let g:pymode_python = 'python3'
+" let g:pymode_trim_whitespaces = 1
+" let g:pymode_doc = 1
+" let g:pymode_doc_bind = 'K'
+" let g:pymode_rope_goto_definition_bin = "<C-]>"
+" let g:pymode_lint = 1
+" let g:pymode_lint_checkers = ['pyflakes','pep8','pylint']
+" set completeopt-=preview
+" inoremap <f8> <Esc>:PymodeLintAuto<cr>
+" noremap <f8> :PymodeLintAuto<cr>
 
 "<F5> compile and running code
 noremap <f5> :call RunningCode()<cr>
